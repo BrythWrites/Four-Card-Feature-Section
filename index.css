@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+*, *::before, ::After{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+body{
+
+    max-width: 375px;
+    background-color: var(--very-light-gray);
+}
+
+main{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 10%;
+    font-family: "poppins", sans-serif;
+  
+}
+
+.header{
+    text-align: center;
+}
+
+h1{
+    font-weight: 200;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding-bottom: 1.25rem;
+    color: var(--very-dark-blue);
+}
+
+span{
+    font-weight: 600;
+}
+
+.header P{
+    font-size: .9rem;
+    color: var(--grayish-blue);
+    margin-bottom: 3rem;
+}
+
+.card{
+    background-color: white;
+    padding: 1.5rem;
+    margin: 1.5rem auto;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: var(--grayish-blue) 0px 13px 27px -5px, var(--grayish-blue) 0px 8px 16px -8px;
+}
+.supervisor{
+    border-top: 4px solid var(--cyan);
+
+}
+
+.team-builder{
+    border-top: 4px solid var(--red);
+}
+
+.karma{
+    border-top: 4px solid var(--orange);
+}
+
+.calculator{
+    border-top: 4px solid var(--blue);
+}
+
+h2{
+    font-size: 1.15rem;
+    color: var(--very-dark-blue);
+    margin-bottom: .25rem;
+}
+
+.section-text{
+    font-weight: 400;
+    color: var(--grayish-blue);
+    font-size: .8rem;
+    margin-bottom: 5rem;
+}
+
+img{
+    width: 55px;
+    float: right;
+    margin-top: -20%;
+}
+
+/* Desktop Layout */
+
+@media screen and (min-width: 376px){
+
+    body{
+        max-width: 1440px;
+        margin: auto;
+        margin-top: -7%;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+
+    .header p{
+        font-size: 1.2rem;
+        width: 60%;
+        margin: auto;
+        margin-bottom: 4rem;
+    }
+
+    .desktop-layout{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .supervisor{
+        width: 33%;
+    }
+
+    .center-column{
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .team-builder{
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .karma{
+        margin: 0;
+    }
+
+    .calculator{
+        width: 33%;
+    }
+
+    
+    h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .section-text{
+        margin-bottom: 6rem;
+        font-size: 1.2rem;
+    }
+
+    img{
+        width: 75px;
+        margin-top: -10%;
+    }
+
+}
+
+
+
